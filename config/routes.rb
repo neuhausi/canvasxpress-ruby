@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#welcome"
+
+  get '/dynamic_charts', to: 'home#dynamic_charts', as: :dynamic_charts
+  # get '/about-us', to: 'welcomes#about_us', as: :about_us
 end

@@ -13,7 +13,10 @@
 ActiveRecord::Schema[7.0].define(version: 2024_02_14_063924) do
   create_table "charts", force: :cascade do |t|
     t.string "name"
-    t.text "blob"
+    t.string "target"
+    t.text "data"
+    t.text "config"
+    t.text "events"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
