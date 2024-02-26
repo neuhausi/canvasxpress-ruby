@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://www.canvasxpress.org/dist/canvasXpress.css"type="text/css"/>
+<script type="text/javascript"src="https://www.canvasxpress.org/dist/canvasXpress.min.js"></script>
+
+<script>
+  var drawCharts = function () {
+    console.log('gon.chart_data: ', gon.chart_data);
+    console.log('gon.data: ', gon.data);
+    console.log("gon.config: ", gon.config);
+
+    var cx3 = new CanvasXpress('canvas3',
+      gon.data_set.data,
+      gon.data_set.config
+    );
+  }
+
+</script>
+
+<body onload="drawCharts();">
+  <h1>CanvasXpress Dynamic Chart</h1>
+
+  <center>
+    <table class='example'>
+      <tr>
+        <td><canvas id='canvas3' width='540' height='540'></canvas></td>
+      </tr>
+    </table><br>
+  </center>
+</body>
+

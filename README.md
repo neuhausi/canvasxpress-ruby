@@ -12,22 +12,11 @@ Execute the following commands to setup the project locally. You should have ins
 * rails server -p 3000
 * Visit localhost:3000 in browser
 
-Things you may want to cover:
+# Load chart data in database
+Execute the following commands to load the charts data to "charts" table and open "/dynamic_charts" path to see the chart
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails db:setup
+* rails db:migrate
+* rake charts:populate_data
+* rails server -p 3000
+* Visit localhost:3000/dynamic_charts in browser
